@@ -1,0 +1,85 @@
+.mailList{
+    flex:1;
+    overflow: scroll;
+}
+.mailList_settings{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke ;
+    background-color: white;
+    z-index: 999;
+    padding-right: 10px;
+}
+.mailList_section{
+    position: sticky;
+    top: 0;
+    display: flex;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+}
+.mailList_sectionOption{
+    display: flex;
+    align-items: center;
+    border-bottom-width: 2px;
+    padding: 15px;
+    min-width: 200px;
+    cursor: pointer;
+    color:gray;
+    border-width: 0 !important;
+}
+.mailList_sectionOption--selected{
+    background-color: whitesmoke;
+    border-width: 3px !important;
+}
+.mailList_sectionOption:hover{
+    background-color: whitesmoke;
+    border-width: 3px !important;
+}
+.mailList_sectionOption > h3{
+    margin-left: 15px;
+}
+.mailList_row{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+    z-index: 999;
+}
+.mailList_row:hover{
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.75);
+}
+.mailList_rowOptions{
+    display: flex;
+}
+.mailList_rowSubject{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    flex: 0.8;
+}
+.mailList_rowSubject > h4{
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.mailList_rowTitle{
+    font-size: 13px;
+    flex: 0.3;
+}
+.mailList_rowTime{
+    padding-right: 15px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.mailList_rowMessage{
+    font-weight: 400;
+    color: gray;
+}
